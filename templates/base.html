@@ -1,0 +1,22 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Scheherazade+New&family=Vollkorn:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/content.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/topbar.css' %}">
+    <title>The  TIMES</title>
+</head>
+<body>
+    {% include '_topbar.html' %}
+    
+    {% block content %}{% endblock %}
+    
+    
+</body>
+</html>

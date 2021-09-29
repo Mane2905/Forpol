@@ -1,20 +1,24 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    {% if contents %}
-        {% for content in contents %}
-            <a href="{% url 'content' content.id %}">
-                <img src="{{ content.img.url }}" alt="">
-            </a>
-            <p>{{ content.thumbnail }}</p>
-        {% endfor %}
-    {% else %}
-        <p>No content</p>
-    {% endif %}
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if contents %}
+    <div class="main">
+    {% for content in contents %}
+        <div class="container">
+                <a href="{% url 'content' content.id %}">
+                <figure>
+                <img src="{{ content.img.url }}" alt="" class="article">
+                <figcaption class="image">
+                {{ content.thumbnail }}
+                </figcaption>
+                <figcaption class="time">{{ content.Date }}</figcaption>
+                </figure>
+                </a>
+        </div>
+    {% endfor %}
+    </div>
+{% else %}
+    <p>No content</p>
+{% endif %}
+{% endblock %}

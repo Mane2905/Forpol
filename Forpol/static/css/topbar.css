@@ -1,0 +1,135 @@
+
+
+
+
+@import url('');
+*{
+    align-content: flex-start;
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:#fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+}
+
+nav{
+    /*background-image: -webkit-linear-gradient(left,#3f51b5,#03a9f4);
+    background-image: linear-gradient(to right,#3f51b5,#03a9f4);*/
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    margin-top: 0px;
+    position: relative;
+}
+
+label.logo{
+    color: black;
+    position: absolute;
+    font-family: 'Vollkorn', serif;
+    font-size: 60px;
+    width: 100%;
+    line-height: 80px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.fa {
+    padding:10px;
+    float: right;
+    margin-top: 18px;
+    margin-right: 15px;
+    text-decoration: none;
+    border-radius: 100%;
+    font-size: 10px;
+
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    width: 32px;
+    text-align: center;
+    font-size: 8px ;
+    background: #3B5998;
+    color: white;
+  }
+  .fa-instagram {
+      background:#F42C38;
+      color: white;
+  }
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+@media(max-width:995px){
+    label.logo{
+        font-size: 54px;
+        margin-top: 5px;
+    }
+    .fa{
+        padding: 7px;
+        font-size: 7px;
+        margin-top: 24px;
+    }
+    .fa-facebook{
+        width: 27px;
+    }
+}
+
+@media(max-width:700px){
+    nav{
+        width: 100%;
+    }
+    label.logo{
+        width: 100%;
+        text-align: left;
+        float: left;
+        padding: 0 5% ;
+        font-size: 48px;
+    }
+    .fa{
+        padding: 5px;       
+        font-size: 5px;
+        margin-top: 27px;
+    }
+    .fa-facebook{
+        width: 24px;
+    }
+}
+
+@media(max-width:500px){
+    label.logo{
+        font-size: 40px;
+    }
+}
+@media(max-width:400px){
+    nav{
+        height:60px;
+    }
+    .fa{
+        margin-top:18px;
+    }
+    label.logo{
+        font-size: 32px;
+        line-height: 60px;
+    }
+}
+@media(max-width:330px){
+    label.logo{
+        font-size: 28px;
+    }
+    .fa{
+        margin-top: 19px;
+    }
+
+}

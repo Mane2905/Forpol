@@ -1,0 +1,138 @@
+.main{
+    /*margin-left:15%;
+    margin-top: 30px;**/
+    /*display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 8px;*/
+
+    display: flex;
+
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start !important;
+    justify-content: center;
+}
+.container{
+    margin: 4%;
+    border-radius: 20px;
+    border-style: solid;
+    border-color : #776a6a;
+    border-width: 2px;
+    padding: 1px;
+    font-size: 12px;
+    font-family: 'Roboto','sans-serif';
+}
+.container a{
+    text-decoration: none;
+    color: black;
+}
+figcaption.image{
+    margin:5px;
+    align-content: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 24px;
+    width: 300px;
+    line-height: 23px;
+}
+figcaption.time{
+    margin-bottom: 5px;
+    margin-left: 5px;
+    font-family: 'Scheherazade New', serif;
+    font-size: 16px;
+}
+.container img{
+    width: 314px;
+    height:200px;
+    border-radius: 20px 20px 0px 0px;
+}
+/**f**/
+/**f**/
+
+
+@media screen and (max-width:1286px){
+    .container{
+        margin: 3%;
+    }
+    
+}
+@media  screen and (max-width:1192px) {
+    .container{
+        margin: 2%;
+    }
+    .container img{
+        width: 280px;
+    }
+    figcaption.image{
+        width:260px;
+    }
+    
+}
+@media screen and (max-width:995px) {
+    .container{
+        margin: 4%;
+    }
+    .container img{
+        width: 314px;
+    }
+    figcaption.image{
+        width:300px;
+    }
+    
+    
+}
+
+@media screen and (max-width:776px){
+    .main{
+        margin: 2%;
+    }
+    .container img{
+        width: 270px;
+    }
+    figcaption.image{
+        width:250px;
+    }
+    
+}
+
+@media screen and (max-width:699px){
+    .main{
+        margin:0.8%;
+    }
+    
+}
+
+@media screen and (max-width:672px){
+    .container img{
+        width: 260px;
+    }
+    figcaption.image{
+        width:240px;
+    }
+    
+    
+}
+
+
+@media screen and (max-width:648px){
+    .container img{
+        width: 320px;
+    }
+    .main{
+        margin:3%;
+    }
+    figcaption.image{
+        width:300px;
+    }
+    
+    
+}
+@media screen and (max-width:360px)  {
+    .container img{
+        width: 280px;
+    }
+    figcaption.image{
+        width:260px;
+    }
+}
