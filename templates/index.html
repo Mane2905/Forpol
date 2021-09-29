@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if contents %}
+        {% for content in contents %}
+            <a href="{% url 'content' content.id %}">
+                <img src="{{ content.img.url }}" alt="">
+            </a>
+            <p>{{ content.thumbnail }}</p>
+        {% endfor %}
+    {% else %}
+        <p>No content</p>
+    {% endif %}
+</body>
+</html>
