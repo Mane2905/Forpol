@@ -6,7 +6,25 @@
     <p class="heading">{{ content.subhead }}</p>
     <img src="{{ content.img.url }}" class="center" alt="">
     <div class="arti">
-        {{ content.cont }}
+        {% for i in X %}
+            <p class="para">{{ i }}</p>
+        {% endfor %}
+        {% for cont in contents %}
+            {% if cont.id != content.id %}
+                <div class="foot">
+                    <a href="{% url 'content' cont.id %}">
+                        <figure>
+                        <img src="{{ cont.img.url }}" alt="" class="foo">
+                        <figcaption class="image">
+                        {{ cont.shortthumb }}
+                        </figcaption>
+                        <figcaption class="date">{{ cont.Date }}</figcaption>
+                    
+                        </figure>
+                    </a>
+                </div>
+            {% endif %}
+        {% endfor %}
     </div>
 </section>
 
