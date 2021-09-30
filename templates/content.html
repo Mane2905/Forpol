@@ -4,7 +4,8 @@
 {% block content %}
     
 <section>
-    <p class="heading-top">{{ content.thumbnail }}</p>
+    <p class="heading-top">{{ content.heading }}</p>
+    <p class="heading">{{ content.subhead }}</p>
     <img src="{{ content.img.url }}" class="center" alt="">
     <div class="arti">
         {{ content.cont }}
