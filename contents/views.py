@@ -1,6 +1,9 @@
 from django.shortcuts import render,get_object_or_404
 from .models import Content
+#from django_user_agents.utils import get_user_agent
 # Create your views here.
+
+
 def index(request):
     contents=Content.objects.order_by('-Date').filter(is_published=True)
     context={
@@ -11,9 +14,10 @@ def content(request,content_id):
     content=get_object_or_404(Content,pk=content_id)
     contents=Content.objects.order_by('-Date').filter(is_published=True)
     X = content.cont.split("\n")
+    
     context={
         'content':content,
         'X':X,
-        'contents':contents
+        'contents':contents,
     }
     return render(request,'content.html',context)

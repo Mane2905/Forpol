@@ -39,13 +39,7 @@ p.heading-top{
     font-family: 'Crimson Text', serif;
     font-size: 24px;
 }
-img.foo{
-    float: right;
-    width:30%;
-    border-radius:7px;
-   
 
-}
 div.foot{
     display: block;
     border-style: solid;
@@ -53,17 +47,36 @@ div.foot{
     border-color: #ECECEC;
     padding:15px;
     padding-bottom: 25px;
-    justify-content: center;
     margin-bottom: 20px;
+}
+img.foo{
+    float: right;
+    width:180px;
+    border-radius:7px;
+    margin-left: 7px ;
+    height:130px;
+
 }
 a{
     text-decoration: none;
 }
 figcaption{
     font-size: 100%;
+    margin-bottom:5px;
+}
+p.image-top{
+    font-family: 'Bitter', sans-serif;
+    font-size: 20px ;
+    font-weight:bolder;
+    margin-left: 7px;
+}
+p.image{
+    line-height: 25px;
+    margin: 2px;
 }
 figcaption.date{
     margin-top:10px;
+    margin-left: 4px;
     font-size: 14px;
 }
 @media(max-width:900px){
@@ -82,6 +95,9 @@ figcaption.date{
     }
     figcaption{
         font-size: 80%;
+    }
+    img.foo{
+        height: 140px;
     }
 }
 @media(max-width:700px){
@@ -112,70 +128,93 @@ figcaption.date{
         width: 450px;
     }
     img.foo{
-        height:100px;
+        height:150px;
     }
 }
-@media(max-width:515px){
-    .arti{
-        width:90%;
-        text-align: justify;
-    }
-    img.foo{
-        width:28%;
-        height: 80px;
-        margin: 7px;
-    }
-}
-@media(max-width:486px){
-    figcaption{
-        font-size: 70%;
-    }
-    img.foo{
-        height:80px;
-    }
 
-}
-@media(max-width:433px){
+@media(max-width:453px){
     figcaption{
         font-size:65%;
     }
     img.foo{
-        height: 75px;
+        height: 150px;
         margin-top: 2px;
     }
+    .arti{
+        width:98%;
+        text-align: justify;
+    }
+    
 }
 
-@media(max-width:415px){
+@media(max-width:425px){
     .arti{
         width:90%;
         text-align: justify;
     }
-    figcaption{
-        font-size: 65%;
-        line-height: 24px;
+    .sub{
+        display: flex;
+        margin:3%;
+        box-sizing: border-box;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start !important;
+        justify-content: center;
+    }
+    div.foot{
+        margin: 4%;
+        border-radius: 20px;
+        border-style: solid;
+        border-color : #776a6a;
+        border-width: 2px;
+        padding: 1px;
+        font-size: 12px;
+        font-family: 'Roboto','sans-serif';
+    }
+    .foot img{
+        margin-left: 0px !important;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        width: 325px;
+        height:160px;
+        border-radius: 20px 20px 0px 0px;
+    }
+    p.image-top{
+        font-size: 18px;
+        font-family: 'bitter',sans-serif;
+        font-weight: bolder;
+    }
+    
+    p.image{
+        margin:5px;
+        align-content: center;
+        font-family: 'Crimson Text', serif;
+        font-size: 24px;
+        line-height: 23px;
     }
     figcaption.date{
         font-size: 12px;
     }
-    div.foot{
-        padding:5px;
+    
+    
+    
+    
+    .foot a{
+        text-decoration: none;
+        color: black;
     }
     
 }
-@media(max-width:384px) {
-    
-    figcaption{
-        font-size:60%;
-    }
-    
-}
+
 @media(max-width:370px){
-    .center{
-        width:100%;
-    }
-    figcaption{
-        line-height: 20px;
+    .foot img{
+        width:280px;
     }
 
+}
+@media(max-width:353px){
+    .center{
+        width:98%;
+    }
 }
 

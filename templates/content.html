@@ -9,15 +9,20 @@
         {% for i in X %}
             <p class="para">{{ i }}</p>
         {% endfor %}
+        <div class="sub">
         {% for cont in contents %}
             {% if cont.id != content.id %}
                 <div class="foot">
                     <a href="{% url 'content' cont.id %}">
                         <figure>
-                        <img src="{{ cont.img.url }}" alt="" class="foo">
-                        <figcaption class="image">
-                        {{ cont.shortthumb }}
-                        </figcaption>
+
+                        <img src="{{ cont.img.url }}"  alt="" class="foo">
+                        <p class="image-top">
+                        {{ cont.country }}
+                        </p>
+                        <p class="image">
+                            {{ cont.thumbnail }}
+                        </p>
                         <figcaption class="date">{{ cont.Date }}</figcaption>
                     
                         </figure>
@@ -25,6 +30,7 @@
                 </div>
             {% endif %}
         {% endfor %}
+    </div>
     </div>
 </section>
 
