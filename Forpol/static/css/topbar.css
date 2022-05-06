@@ -92,10 +92,10 @@ label.logo{
     }
     label.logo{
         width: 100%;
-        text-align: left;
+        /*text-align: left;
         float: left;
-        padding: 0 5% ;
-        font-size: 48px;
+        padding: 0 5% ;*/
+        font-size: 44px;
     }
     .fa{
         padding: 5px;       
@@ -109,7 +109,7 @@ label.logo{
 
 @media(max-width:500px){
     label.logo{
-        font-size: 40px;
+        font-size: 36px;
     }
 }
 @media(max-width:400px){
@@ -120,16 +120,16 @@ label.logo{
         margin-top:18px;
     }
     label.logo{
-        font-size: 32px;
+        font-size: 28px;
         line-height: 60px;
     }
 }
 @media(max-width:330px){
     label.logo{
-        font-size: 28px;
+        font-size: 24px;
     }
     .fa{
-        margin-top: 19px;
+        margin-top: 15px;
     }
 
 }

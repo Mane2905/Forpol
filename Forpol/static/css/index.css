@@ -32,19 +32,19 @@ figcaption.image{
     margin:5px;
     align-content: center;
     font-family: 'Crimson Text', serif;
-    font-size: 24px;
+    font-size: 28px;
     width: 300px;
-    line-height: 23px;
+    line-height: 25px;
 }
 figcaption.time{
     margin-bottom: 5px;
     margin-left: 5px;
     font-family: 'Scheherazade New', serif;
-    font-size: 16px;
+    font-size: 19px;
 }
 .container img{
     width: 314px;
-    height:200px;
+    height:250px;
     border-radius: 20px 20px 0px 0px;
 }
 /**f**/

@@ -15,8 +15,8 @@ p.heading-top{
     text-align: center;
     line-height:50px;
     margin-top: 15px;
-    margin-left: 18px;
-    margin-right: 18px;
+    margin-left: 128px;
+    margin-right: 128px;
 
 }
 .para{
@@ -80,6 +80,10 @@ figcaption.date{
     font-size: 14px;
 }
 @media(max-width:900px){
+    p.heading_top{
+        margin-left: 78px;
+        margin-right: 78px;
+    }
     .center{
         width:500px;
     }
@@ -116,7 +120,8 @@ figcaption.date{
         text-align: center;
         line-height:40px;
         margin-top: 15px;
-    
+        margin-left: 48px;
+        margin-right: 48px;
     }
 
 }
@@ -144,7 +149,10 @@ figcaption.date{
         width:98%;
         text-align: justify;
     }
-    
+    p.heading-top{
+        margin-left: 18px;
+        margin-right: 18px;
+    }
 }
 
 @media(max-width:425px){

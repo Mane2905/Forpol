@@ -8,8 +8,10 @@ class Content(models.Model):
     heading = models.TextField(blank=False,default="null")
     subhead = models.TextField(blank=True)
     img = models.ImageField(upload_to='photos/%Y/%m/%d/')
+    #img = CloudinaryField('image')
     cont=models.TextField(blank=False)
     Date = models.DateTimeField(default=datetime.now, blank=True)
     is_published=models.BooleanField(default=True)
     def __str__(self):
         return self.thumbnail
+        

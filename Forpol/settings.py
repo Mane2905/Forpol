@@ -10,6 +10,12 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
+'''
+import django_heroku
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+'''
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -23,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-nr@84jhhb)n7m$!x$tex=bijwo4jl5fd(2s7_1$2f_6ygsu)ml'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True #False
 
 ALLOWED_HOSTS = []
 
@@ -39,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_user_agents',
+    #'cloudinary'
 ]
 '''CACHES = {
     'default': {
@@ -50,6 +57,7 @@ USER_AGENTS_CACHE = 'default'''
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    #'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -127,8 +135,14 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
-
+'''
+# adding config
+cloudinary.config( 
+  cloud_name = "dgx1wfack", 
+  api_key = "222725867755574", 
+  api_secret = "v9MHTx6plPSHF7twJTbMlo2ccKk" 
+)
+'''
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
@@ -139,5 +153,8 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'Forpol/static')]
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')#Remove if cloudinary
+MEDIA_URL = '/media/'#Remove if cloudinary
+'''
+# Activate Django-Heroku.
+django_heroku.settings(locals())'''
